@@ -1,5 +1,8 @@
-#Team Name: Three Musketeers 
-#Tech Stack: Python (Anaconda)
+Team Name: Three Musketeers
+
+Tech Stack: Python (Anaconda)
+
+
 Abstract: Our project is a student friendly attention detection system which tracks the cognitive state of child towards the class based on the facial gestures. 
 In the traditional classroom, a teacher can sense the level of attentiveness but since it’s difficult for a teacher to do so in an online class, our model gives indication of the student’s concentration level in the class i.e. if he/she is sleepy or distracted from the screen. 
 Our software sends an alert to a student who is very sleepy without letting the teacher know about it. This way the student will feel embarrassed but will help the student to regain attention.
