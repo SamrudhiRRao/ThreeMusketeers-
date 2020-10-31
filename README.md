@@ -1,26 +1,73 @@
-# ThreeMusketeers-
-Project Link for Ingenius 2020
+# Project Name : Emotion-recognition
+# Table of Content :
+1.[Description](#p1)
 
-Team Name: Three Musketeers 
-Tech Stack: Python (Anaconda)
-Abstract: Our project is a student friendly attention detection system which tracks the cognitive state of child towards the class based on the facial gestures. 
-In the traditional classroom, a teacher can sense the level of attentiveness but since it’s difficult for a teacher to do so in an online class, our model gives indication of the student’s concentration level in the class i.e. if he/she is sleepy or distracted from the screen. 
-Our software sends an alert to a student who is very sleepy without letting the teacher know about it. This way the student will feel embarrassed but will help the student to regain attention.
-The software has mainly 3 features which help detect the attentiveness of the student.
-Face, eye and smile detection: The code detects if the eyes are open or not along with if the student is looking towards the screen or not. 
+2.[Installations](#p2)
 
-Drowsiness detection: This part of the code plays a beep sound when a student falls asleep during the class. If their eyes have been closed for a certain amount of time, we’ll assume that they are starting to doze off and play an alarm to wake them up and grab their attention.
+3.[Usage](#p3)
 
-Emotion detection: This is responsible for feature extraction of facial expressions with combination of neural network for the recognition of different facial emotions (happy, sad, angry, fear, surprised, neutral etc.). It is based upon human face gestures as we know face also reflects the human brain activities or emotions.
-Limitation: The software isn’t much accurate when a person is wearing glasses/spectacles. 
-Accuracy: 80-90%
-Future Work: 
-1. Building this as a website or web application or run it as a background application when student uses an online learning platform.
-2. Adding a feature for the students to ask a doubt with an option to ask it now or later.
-3. The teacher gets the statistics of the percentage of students paying attention to the class and an alert is sent to her when the percentage is less than 50%. This allows the   teacher to modify his/her style of teaching.
-4. Work more on face recognition i.e. storing the face data of the student and check if he/she is the one in front of the camera.
+4.[Dataset](#p4)
+
+
+
+![](https://github.com/omar178/Emotion-recognition/blob/master/emotions/Happy.PNG)
+![](https://github.com/omar178/Emotion-recognition/blob/master/emotions/angry.PNG)
 
 
 
 
+<a id="p1"></a> 
+# Description:
 
+Our Human face is having a mixed emotions so we are to demonstrate the probabilities of these emotions that we have.
+
+## What does Emotion Recognition mean?
+
+Emotion recognition is a technique used in software that allows a program to "read" the emotions on a human face using advanced image processing. Companies have been experimenting with combining sophisticated algorithms with image processing techniques that have emerged in the past ten years to understand more about what an image or a video of a person's face tells us about how he/she is feeling and not just that but also showing the probabilities of mixed emotions a face could has.
+
+<a id="p2"></a> 
+# Installations:
+
+Install dependencies using requirements.txt
+
+```shell
+pip install -r requirements.txt
+```
+
+<a id="p3"></a> 
+# Usage:
+
+The program will creat a window to display the scene capture by webcamera and a window representing the probabilities of detected emotions.
+
+> Demo
+
+python real_time_video.py
+
+You can just use this with the provided pretrained model i have included in the path written in the code file, i have choosen this specificaly since it scores the best accuracy, feel free to choose any but in this case you have to run the later file train_emotion_classifier
+> If you just want to run this demo, the following content can be skipped
+- Train
+
+- python train_emotion_classifier.py
+
+
+<a id="p4"></a> 
+# Dataset:
+
+I have used [this](https://www.kaggle.com/c/3364/download-all) dataset
+
+Download it and put the csv in fer2013/fer2013/
+
+-fer2013 emotion classification test accuracy: 66%
+
+
+# Credits
+This work is inspired from [this](https://github.com/oarriaga/face_classification) great work and the resources of Adrian Rosebrock helped me alot!.
+
+# Ongoing 
+Draw emotions faces next to the detected face.
+
+# Issues & Suggestions
+
+If any issues and suggestions to me, you can create an [issue](https://github.com/omar178/Emotion-recognition/issues).
+
+If you like this work please help me by giving me some stars.
